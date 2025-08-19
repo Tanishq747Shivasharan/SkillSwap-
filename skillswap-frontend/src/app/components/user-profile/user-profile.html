@@ -1,0 +1,121 @@
+<div class="profile-container">
+  @if (user(); as currentUser) {
+    <div class="profile-header">
+      <div class="user-info">
+        <h1>{{ currentUser.name }}</h1>
+        <p class="email">{{ currentUser.email }}</p>
+        @if (currentUser.location) {
+          <p class="location">📍 {{ currentUser.location }}</p>
+        }
+      </div>
+      <div class="actions">
+        <a [routerLink]="['/matches', currentUser.id]" class="btn btn-primary">Find Matches</a>
+        <a routerLink="/users" class="btn btn-secondary">Back to Users</a>
+      </div>
+    </div>
+
+    <div class="skills-section">
+      <div class="skills-column">
+        <div class="section-header">
+          <h2>Skills I Offer</h2>
+          <button class="btn btn-success" (click)="showAddOffered.set(!showAddOffered())">
+            {{ showAddOffered() ? 'Cancel' : 'Add Skill' }}
+          </button>
+        </div>
+
+        @if (showAddOffered()) {
+          <div class="add-skill-form">
+            <form (ngSubmit)="addOfferedSkill()">
+              <div class="form-group">
+                <label for="offeredSkillName">Skill Name *</label>
+                <input 
+                  type="text" 
+                  id="offeredSkillName" 
+                  [(ngModel)]="newOfferedSkill().skillName" 
+                  name="offeredSkillName"
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="offeredDescription">Description</label>
+                <textarea 
+                  id="offeredDescription" 
+                  [(ngModel)]="newOfferedSkill().description" 
+                  name="offeredDescription"
+                  rows="3"></textarea>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-success">Add Skill</button>
+                <button type="button" class="btn btn-secondary" (click)="resetOfferedForm()">Cancel</button>
+              </div>
+            </form>
+          </div>
+        }
+
+        <div class="skills-list">
+          @for (skill of offeredSkills(); track skill.id) {
+            <div class="skill-card offered">
+              <h3>{{ skill.skillName }}</h3>
+              @if (skill.description) {
+                <p>{{ skill.description }}</p>
+              }
+            </div>
+          } @empty {
+            <p class="no-skills">No skills offered yet.</p>
+          }
+        </div>
+      </div>
+
+      <div class="skills-column">
+        <div class="section-header">
+          <h2>Skills I Want to Learn</h2>
+          <button class="btn btn-info" (click)="showAddRequested.set(!showAddRequested())">
+            {{ showAddRequested() ? 'Cancel' : 'Add Request' }}
+          </button>
+        </div>
+
+        @if (showAddRequested()) {
+          <div class="add-skill-form">
+            <form (ngSubmit)="addRequestedSkill()">
+              <div class="form-group">
+                <label for="requestedSkillName">Skill Name *</label>
+                <input 
+                  type="text" 
+                  id="requestedSkillName" 
+                  [(ngModel)]="newRequestedSkill().skillName" 
+                  name="requestedSkillName"
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="requestedDescription">Description</label>
+                <textarea 
+                  id="requestedDescription" 
+                  [(ngModel)]="newRequestedSkill().description" 
+                  name="requestedDescription"
+                  rows="3"></textarea>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-info">Add Request</button>
+                <button type="button" class="btn btn-secondary" (click)="resetRequestedForm()">Cancel</button>
+              </div>
+            </form>
+          </div>
+        }
+
+        <div class="skills-list">
+          @for (skill of requestedSkills(); track skill.id) {
+            <div class="skill-card requested">
+              <h3>{{ skill.skillName }}</h3>
+              @if (skill.description) {
+                <p>{{ skill.description }}</p>
+              }
+            </div>
+          } @empty {
+            <p class="no-skills">No skill requests yet.</p>
+          }
+        </div>
+      </div>
+    </div>
+  } @else {
+    <div class="loading">Loading user profile...</div>
+  }
+</div>

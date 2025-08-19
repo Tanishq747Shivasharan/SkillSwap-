@@ -1,0 +1,85 @@
+<div class="marketplace-container">
+  <div class="header">
+    <h1>Skill Marketplace</h1>
+    <p>Discover skills offered by our community and find learning opportunities</p>
+  </div>
+
+  <div class="tabs">
+    <button 
+      class="tab-button" 
+      [class.active]="activeTab() === 'offered'"
+      (click)="setActiveTab('offered')">
+      Skills Offered ({{ offeredSkills().length }})
+    </button>
+    <button 
+      class="tab-button" 
+      [class.active]="activeTab() === 'requested'"
+      (click)="setActiveTab('requested')">
+      Skills Requested ({{ requestedSkills().length }})
+    </button>
+  </div>
+
+  <div class="tab-content">
+    @if (activeTab() === 'offered') {
+      <div class="skills-grid">
+        @for (skill of offeredSkills(); track skill.id) {
+          <div class="skill-card offered">
+            <div class="skill-header">
+              <h3>{{ skill.skillName }}</h3>
+              <span class="skill-type">Offered</span>
+            </div>
+            @if (skill.description) {
+              <p class="description">{{ skill.description }}</p>
+            }
+            @if (skill.user) {
+              <div class="user-info">
+                <strong>{{ skill.user.name }}</strong>
+                <span class="email">{{ skill.user.email }}</span>
+                @if (skill.user.location) {
+                  <span class="location">📍 {{ skill.user.location }}</span>
+                }
+                <a [routerLink]="['/users', skill.user.id]" class="btn btn-sm">View Profile</a>
+              </div>
+            }
+          </div>
+        } @empty {
+          <div class="no-skills">
+            <h3>No skills offered yet</h3>
+            <p>Be the first to share your expertise with the community!</p>
+          </div>
+        }
+      </div>
+    }
+
+    @if (activeTab() === 'requested') {
+      <div class="skills-grid">
+        @for (skill of requestedSkills(); track skill.id) {
+          <div class="skill-card requested">
+            <div class="skill-header">
+              <h3>{{ skill.skillName }}</h3>
+              <span class="skill-type">Requested</span>
+            </div>
+            @if (skill.description) {
+              <p class="description">{{ skill.description }}</p>
+            }
+            @if (skill.user) {
+              <div class="user-info">
+                <strong>{{ skill.user.name }}</strong>
+                <span class="email">{{ skill.user.email }}</span>
+                @if (skill.user.location) {
+                  <span class="location">📍 {{ skill.user.location }}</span>
+                }
+                <a [routerLink]="['/users', skill.user.id]" class="btn btn-sm">View Profile</a>
+              </div>
+            }
+          </div>
+        } @empty {
+          <div class="no-skills">
+            <h3>No skill requests yet</h3>
+            <p>Start by adding skills you'd like to learn!</p>
+          </div>
+        }
+      </div>
+    }
+  </div>
+</div>
