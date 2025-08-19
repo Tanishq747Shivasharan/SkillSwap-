@@ -220,3 +220,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Information about your environment (e.g., operating system, browser, versions).
 
 I appreciate your feedback and will strive to respond and resolve issues promptly
+
