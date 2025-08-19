@@ -163,18 +163,31 @@ The application includes sample users and skills for development:
 ## ScreenShots
 
 ### Main UI
+#### Onboarding new user instructions for using the web application...
 ![Onboarding](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20094022.png)
+#### Users section
 ![Users](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20094424.png)
+#### Marketplace section
 ![Market place](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20094444.png)
+#### Adding new skill to sample user Eren
 ![Sample user Eren](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20095120.png)
+#### As you can see new skill has been added successfully on the add skill section of the sample user Eren now adding new skill request to the sample user Eren...
 ![Added new skill to Eren](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20095215.png)
+#### No user is teaching Swift so no mutual finding for that perticular skill...
 ![Skill finder](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20095256.png)
+#### Added new skill by Eren reflected to marketplace, in skill offered section
 ![Added new skill by Eren reflected to marketplace, in skill offered section](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20095330.png)
+#### Request skill by Eren reflected to marketplace, in skill requested section
 ![Request skill by Eren reflected to marketplace, in skill requested section](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20095341.png)
+#### Creating a new user
 ![Creating a new user](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20095402.png)
+#### Adding new user Nami
 ![Adding new user Nami](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20095456.png)
+#### Added Nami as a new user
 ![Added Nami as a new user](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20095510.png)
+#### Nither skill and nor requested skill by Nami...
 ![No skill and no requested skill by Nami](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20095526.png)
+#### Deletion privilages are only to the admin of the website....
 
 
 ## Contributing
@@ -195,5 +208,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Angular team for the modern frontend framework
 
 - H2 Database for easy development setup
+
 
 
