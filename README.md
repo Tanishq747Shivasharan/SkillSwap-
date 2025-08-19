@@ -2,7 +2,7 @@
 
 A modern skill-sharing platform where users can offer their expertise and find learning opportunities through mutual skill exchanges.
 
-## 🚀 Features
+## Features
 
 - **User Management**: Create and manage user profiles with skills and locations
 - **Skill Marketplace**: Browse skills offered and requested by the community
@@ -10,7 +10,7 @@ A modern skill-sharing platform where users can offer their expertise and find l
 - **Real-time Updates**: Modern Angular frontend with responsive design
 - **RESTful API**: Spring Boot backend with comprehensive API documentation
 
-## 🏗️ Architecture
+## Architecture
 
 ### Backend (Spring Boot)
 - **Framework**: Spring Boot 3.5.4 with Java 17
@@ -24,7 +24,7 @@ A modern skill-sharing platform where users can offer their expertise and find l
 - **State Management**: Angular Signals (zoneless)
 - **HTTP Client**: Angular HttpClient with RxJS
 
-## 🛠️ Getting Started
+## Getting Started
 
 ### Prerequisites
 - Java 17+
@@ -46,13 +46,13 @@ ng serve
 ```
 The frontend will start on `http://localhost:4200`
 
-## 📚 API Documentation
+## API Documentation
 
 Once the backend is running, visit:
 - **Swagger UI**: http://localhost:8082/swagger-ui/index.html
 - **H2 Console**: http://localhost:8082/h2-console (development only)
 
-## 🎯 Core Functionality
+## Core Functionality
 
 ### Skill Matching Algorithm
 The platform features a sophisticated mutual matching system:
@@ -67,7 +67,7 @@ The platform features a sophisticated mutual matching system:
 - `GET /api/skills/requested` - Browse skill requests
 - `GET /api/skills/match/{userId}` - Find mutual matches
 
-## 🔧 Development
+## Development
 
 ### Database Schema
 ```sql
@@ -98,13 +98,57 @@ CREATE TABLE skill_requested (
 );
 ```
 
+### Springboot Created pom.xml file dependancies
+```
+<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<!-- Used to Automatically validate request bodies or DTO's -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- H2 Database for development -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- Used to test API without using Postman
+		 Used Swagger UI instead -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.8.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+```
+
 ### Sample Data
 The application includes sample users and skills for development:
-- Alice Smith (Java, Database Design) ↔ (Python Data Science)
-- Bob Johnson (React Development) ↔ (Backend Development)
-- Charlie Brown (Cloud Computing) ↔ (Mobile App Development)
+- Telusko (Java, Database Design) ↔ (Python Data Science)
+- Eren (React Development) ↔ (Backend Development)
+- Tanishq (Cloud Computing) ↔ (Mobile App Development)
 
-## 🚀 Deployment
+## Deployment
 
 ### Backend
 - Configure PostgreSQL connection in `application.properties`
@@ -116,7 +160,19 @@ The application includes sample users and skills for development:
 - Deploy `dist/` folder to web server
 - Update API base URL for production
 
-## 🤝 Contributing
+## ScreenShots
+
+### Main UI
+![Onboarding](image-url-or-path)
+![Alt text](image-url-or-path)
+![Alt text](image-url-or-path)
+![Alt text](image-url-or-path)
+![Alt text](image-url-or-path)
+![Alt text](image-url-or-path)
+![Alt text](image-url-or-path)
+
+
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -124,12 +180,13 @@ The application includes sample users and skills for development:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Spring Boot team for the excellent framework
 - Angular team for the modern frontend framework
+
 - H2 Database for easy development setup
