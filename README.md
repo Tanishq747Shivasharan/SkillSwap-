@@ -163,12 +163,17 @@ The application includes sample users and skills for development:
 ## ScreenShots
 
 ### Main UI
-![Onboarding](image-url-or-path)
-![Alt text](image-url-or-path)
-![Alt text](image-url-or-path)
-![Alt text](image-url-or-path)
-![Alt text](image-url-or-path)
-![Alt text](image-url-or-path)
+![Onboarding](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20094022.png)
+![Users](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20094424.png)
+![Market place](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20094444.png)
+![Sample user Eren](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20095120.png)
+![Added new skill to Eren](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20095215.png)
+![Skill finder](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20095256.png)
+![Added new skill by Eren reflected to marketplace, in skill offered section](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20095330.png)
+![Request skill by Eren reflected to marketplace, in skill requested section](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20095341.png)
+![Creating a new user](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20095402.png)
+![Added Nami as a new user](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20095510.png)
+![No skill and no requested skill by Nami](https://github.com/Tanishq747Shivasharan/SkillSwap-/blob/main/SkillSwap%20images/Screenshot%202025-08-19%20095526.png)
 ![Alt text](image-url-or-path)
 
 
@@ -190,3 +195,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Angular team for the modern frontend framework
 
 - H2 Database for easy development setup
+
