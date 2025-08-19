@@ -219,10 +219,11 @@ If you encounter any bugs, issues, or have feature requests related to SkillSwap
 - Detailed steps to reproduce the problem or describe the feature request.
 - Screenshots or error messages, if applicable.
 - Information about your environment (e.g., operating system, browser, versions).
-- Here's a direct link for an issue [Issue #issue_number](https://github.com/Tanishq747Shivasharan/SkillSwap-/issues)
+- Here's a direct link for an issue [Issue](https://github.com/Tanishq747Shivasharan/SkillSwap-/issues)
 
 
 I appreciate your feedback and will strive to respond and resolve issues promptly
+
 
 
 
