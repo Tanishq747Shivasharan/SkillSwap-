@@ -1,0 +1,95 @@
+<div class="matches-container">
+  @if (user(); as currentUser) {
+    <div class="header">
+      <div class="user-info">
+        <h1>Skill Matches for {{ currentUser.name }}</h1>
+        <p>Find mutual learning opportunities where you can teach and learn</p>
+      </div>
+      <div class="actions">
+        <a [routerLink]="['/users', currentUser.id]" class="btn btn-secondary">Back to Profile</a>
+        <a routerLink="/users" class="btn btn-primary">All Users</a>
+      </div>
+    </div>
+  }
+
+  @if (loading()) {
+    <div class="loading">
+      <div class="spinner"></div>
+      <p>Finding your perfect skill matches...</p>
+    </div>
+  } @else {
+    @if (matches().length > 0) {
+      <div class="matches-grid">
+        @for (match of matches(); track $index) {
+          <div class="match-card">
+            <div class="match-header">
+              <h3>Perfect Match Found! 🎯</h3>
+              <div class="match-users">
+                @if (getUserById(match.userBId); as matchedUser) {
+                  <div class="matched-user">
+                    <strong>{{ matchedUser.name }}</strong>
+                    <span class="email">{{ matchedUser.email }}</span>
+                    @if (matchedUser.location) {
+                      <span class="location">📍 {{ matchedUser.location }}</span>
+                    }
+                  </div>
+                }
+              </div>
+            </div>
+
+            <div class="skill-exchange">
+              <div class="exchange-item you-teach">
+                <div class="exchange-label">You can teach:</div>
+                <div class="skill-name">{{ match.skillAOffers_BWants }}</div>
+                <div class="exchange-arrow">→</div>
+              </div>
+              
+              <div class="exchange-divider">
+                <span>Mutual Exchange</span>
+              </div>
+              
+              <div class="exchange-item you-learn">
+                <div class="exchange-arrow">←</div>
+                <div class="skill-name">{{ match.skillBOffers_AWants }}</div>
+                <div class="exchange-label">You can learn:</div>
+              </div>
+            </div>
+
+            <div class="match-actions">
+              @if (getUserById(match.userBId); as matchedUser) {
+                <a [routerLink]="['/users', matchedUser.id]" class="btn btn-primary">
+                  View {{ matchedUser.name }}'s Profile
+                </a>
+              }
+              <button class="btn btn-success" (click)="contactUser(match.userBId)">
+                Start Conversation
+              </button>
+            </div>
+          </div>
+        }
+      </div>
+    } @else {
+      <div class="no-matches">
+        <div class="no-matches-icon">🔍</div>
+        <h2>No mutual matches found yet</h2>
+        <p>Don't worry! Here are some tips to find great skill exchange partners:</p>
+        <ul>
+          <li>Add more skills you can offer to your profile</li>
+          <li>Specify skills you'd like to learn</li>
+          <li>Check back regularly as new users join the platform</li>
+          <li>Browse the marketplace to see what skills are available</li>
+        </ul>
+        <div class="no-matches-actions">
+          @if (user(); as currentUser) {
+            <a [routerLink]="['/users', currentUser.id]" class="btn btn-primary">
+              Update My Skills
+            </a>
+          }
+          <a routerLink="/marketplace" class="btn btn-secondary">
+            Browse Marketplace
+          </a>
+        </div>
+      </div>
+    }
+  }
+</div>
