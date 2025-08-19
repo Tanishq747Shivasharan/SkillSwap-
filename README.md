@@ -211,8 +211,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Final Project done !
 
-### Issue Reporting
-#####If you encounter any bugs, issues, or have feature requests related to SkillSwap, please feel free to open an issue in this repository. When reporting an issue, kindly include:
+## Issue Reporting
+
+If you encounter any bugs, issues, or have feature requests related to SkillSwap, please feel free to open an issue in this repository. When reporting an issue, kindly include:
 
 - A clear and descriptive title.
 - Detailed steps to reproduce the problem or describe the feature request.
@@ -220,4 +221,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Information about your environment (e.g., operating system, browser, versions).
 
 I appreciate your feedback and will strive to respond and resolve issues promptly
+
 
