@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing to SkillSwap! This document provides guidelines and information for contributors.
 
-# Current Contributors.
+## Current Contributors.
 1. Vedant Vallal
 
 ## 🚀 Getting Started
@@ -146,3 +146,4 @@ For new features:
 
 
 Thank you for contributing to SkillSwap! 🎉
+
