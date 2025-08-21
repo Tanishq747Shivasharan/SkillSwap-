@@ -5,7 +5,7 @@ Thank you for your interest in contributing to SkillSwap! This document provides
 ## Current Contributors.
 1. Vedant Vallal
 2. Aryan Jakkal
-
+3. Shounak Galgali
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -147,5 +147,6 @@ For new features:
 
 
 Thank you for contributing to SkillSwap! 🎉
+
 
 
