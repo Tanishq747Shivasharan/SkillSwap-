@@ -2,6 +2,9 @@
 
 Thank you for your interest in contributing to SkillSwap! This document provides guidelines and information for contributors.
 
+# Current Contributors.
+1. Vedant Vallal
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -140,5 +143,6 @@ For new features:
 - Create an issue for bugs or questions
 - Join discussions in pull requests
 - Check existing documentation first
+
 
 Thank you for contributing to SkillSwap! 🎉
