@@ -4,6 +4,7 @@ Thank you for your interest in contributing to SkillSwap! This document provides
 
 ## Current Contributors.
 1. Vedant Vallal
+2. Aryan Jakkal
 
 ## 🚀 Getting Started
 
@@ -146,4 +147,5 @@ For new features:
 
 
 Thank you for contributing to SkillSwap! 🎉
+
 
