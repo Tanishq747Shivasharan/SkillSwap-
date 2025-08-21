@@ -1,6 +1,7 @@
 # SkillSwap
 
 A modern skill-sharing platform where users can offer their expertise and find learning opportunities through mutual skill exchanges.
+Contributors are specified in the contributing.md file.
 
 ## Features
 
@@ -223,6 +224,7 @@ If you encounter any bugs, issues, or have feature requests related to SkillSwap
 
 
 I appreciate your feedback and will strive to respond and resolve issues promptly
+
 
 
 
