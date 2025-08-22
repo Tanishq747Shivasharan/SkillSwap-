@@ -6,6 +6,7 @@ Thank you for your interest in contributing to SkillSwap! This document provides
 1. Vedant Vallal
 2. Aryan Jakkal
 3. Shounak Galgali
+4. Vinay Maheshwaram
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -147,6 +148,7 @@ For new features:
 
 
 Thank you for contributing to SkillSwap! 🎉
+
 
 
 
